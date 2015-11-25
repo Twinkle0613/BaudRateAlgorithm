@@ -96,7 +96,7 @@ void test_getDIV_given_baud_rate_is_9600_and_frequency_is_45MHz(void){
 
   baudRateSetting(9600,45000000,&programValue);
 
-  UnityAssertEqualNumber((_U_SINT)(_UU32)((0x498)), (_U_SINT)(_UU32)((programValue)), (((void *)0)), (_U_UINT)51, UNITY_DISPLAY_STYLE_UINT32);
+  UnityAssertEqualNumber((_U_SINT)(_UU32)((0x2498)), (_U_SINT)(_UU32)((programValue)), (((void *)0)), (_U_UINT)51, UNITY_DISPLAY_STYLE_UINT32);
 
 
 
@@ -112,7 +112,7 @@ void test_getDIV_given_baud_rate_is_19200_and_frequency_is_45MHz(void){
 
   baudRateSetting(19200,45000000,&programValue);
 
-  UnityAssertEqualNumber((_U_SINT)(_UU32)((0x248)), (_U_SINT)(_UU32)((programValue)), (((void *)0)), (_U_UINT)59, UNITY_DISPLAY_STYLE_UINT32);
+  UnityAssertEqualNumber((_U_SINT)(_UU32)((0x1248)), (_U_SINT)(_UU32)((programValue)), (((void *)0)), (_U_UINT)59, UNITY_DISPLAY_STYLE_UINT32);
 
 
 

@@ -48,7 +48,7 @@ void test_getDIV_given_baud_rate_is_57600_and_frequency_is_60MHz(void){
 void test_getDIV_given_baud_rate_is_9600_and_frequency_is_45MHz(void){
   uint32_t programValue;
   baudRateSetting(9600,45000000,&programValue);
-  TEST_ASSERT_EQUAL_UINT32(0x498,programValue);//0x249
+  TEST_ASSERT_EQUAL_UINT32(0x2498,programValue);//0x249
   //585.9375
   //0.9375*8 = 7.5 => 8 => 0x8
 }
@@ -56,7 +56,7 @@ void test_getDIV_given_baud_rate_is_9600_and_frequency_is_45MHz(void){
 void test_getDIV_given_baud_rate_is_19200_and_frequency_is_45MHz(void){
   uint32_t programValue;
   baudRateSetting(19200,45000000,&programValue);
-  TEST_ASSERT_EQUAL_UINT32(0x248,programValue); //0x124
+  TEST_ASSERT_EQUAL_UINT32(0x1248,programValue); //0x124
   //292.9687
   //0.9687*8 = 7.7 => 8 => 0x8
 }
